@@ -1,0 +1,70 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the love project</title>
+    <link rel="stylesheet" href="home.css">
+    
+</head>
+
+
+<body>
+<div id="contair">
+  <p id="sentence">LOVE IS WHEN YOU BUILD EACH OTHER UP</p>
+</div>
+<script src="homeword.js"></script>
+
+
+  <h4>Click!</h4>
+
+<div class="container">
+  <div class="button-group">
+      <button class="toggle-button" data-target="menu2">TYPE</button>
+      <div class="dropdown-menu" id="menu2">
+          <div class="menu-item"><a href="test.html">Single</a></div>
+          <div class="menu-item"><a href="test.html">Married</a></div>
+          <div class="menu-item"><a href="test.html">Relationship</a></div>
+      </div>
+  </div>
+
+
+  <div class="button-group">
+      <button class="toggle-button" data-target="menu3">SONG</button>
+      <div class="dropdown-menu" id="menu3">
+          <div class="menu-item"><a href="song.html">Japan</a></div>
+          <div class="menu-item"><a href="test.html">China</a></div>
+          <div class="menu-item"><a href="test.html">Korea</a></div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<div class="gradient-bg">
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+    </svg>
+
+
+    <div class="gradients-container">
+      <div class="g1"></div>
+      <div class="g2"></div>
+      <div class="g3"></div>
+      <div class="g4"></div>
+      <div class="g5"></div>
+      <div class="interactive"></div>
+    </div>
+  </div>
+
+
+
+  <script src="home.js"></script>
+</body>
+</html>
