@@ -1,7 +1,8 @@
 /* 全局样式 */
 body {
-    background-color: black;
-    color: white;
+    background: url(backgound.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: black;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
