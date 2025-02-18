@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sentence {
+    position: absolute;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.sentence:hover {
+    color: rgb(255, 84, 164);
+    text-shadow: 0 0 8px rgb(255, 79, 149);
+}
+
+.paragraph {
+    position: absolute;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    display: none;
+    cursor: pointer;
+}
