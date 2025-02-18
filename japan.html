@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Quotes Animation</title>
+    <link rel="stylesheet" href="japan.css">
+    <link rel="stylesheet" href="button.css">
+</head>
+<body>
+    <div class="container">
+        <div class="lyrics-container">
+            <div class="lyrics-box">
+                <ul id="lyrics-list"></ul>
+            </div>
+        </div>
+
+        <div class="player-container">
+            <img id="play-button" src="songheart.png" alt="播放按钮">
+            <audio id="audio" src="love.mp3"></audio>
+            
+            <input type="range" id="progress-bar" value="0" min="0" max="100">
+            <div id="time-display">00:00 / 00:00</div>
+        </div>
+
+
+        <div class="bottom-nav">
+            <a href="home.html" class="button">HOME</a>
+            <a href="page2.html" class="button">JAPAN</a>
+            <a href="page3.html" class="button">CHINA</a>
+            <a href="page4.html" class="button">KOREA</a>
+        </div>
+    
+    <script src="japan.js"></script>
+</body>
+</html>
