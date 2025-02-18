@@ -1,0 +1,92 @@
+/* 全局样式 */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* 容器 */
+.container {
+    text-align: center;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 歌词区域 */
+.lyrics-container {
+    height: 360px; /* 确保显示 10 行歌词 */
+    width: 100%;
+    overflow: hidden; /* 隐藏滚动条 */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+li {
+    font-size: 18px;
+    opacity: 0.5;
+    transition: opacity 0.3s, font-size 0.3s;
+    padding: 8px 0;
+}
+
+li.active {
+    font-size: 24px;
+    opacity: 1;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* 播放控制 */
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* 播放/暂停按钮 */
+#play-pause {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* 进度条 */
+.progress-bar {
+    flex: 1;
+    height: 5px;
+    background-color: #555;
+    position: relative;
+    border-radius: 3px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    background-color: white;
+    border-radius: 3px;
+    transition: width 0.1s;
+}

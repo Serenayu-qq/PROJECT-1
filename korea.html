@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歌词同步播放器</title>
+    <link rel="stylesheet" href="korea.css">
+    <link rel="stylesheet" href="button.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="lyrics-container">
+            <ul id="lyrics"></ul>
+        </div>
+
+        <!-- 进度条 & 播放控制 -->
+        <div class="controls">
+            <button id="play-pause">🤍</button>
+            <span id="current-time">00:00</span>
+            <div class="progress-bar" id="progress-container">
+                <div class="progress" id="progress"></div>
+            </div>
+            <span id="duration">00:00</span>
+        </div>
+
+        <audio id="audio">
+            <source src="korea.mp3" type="audio/mpeg">
+        
+        </audio>
+    </div>
+    <script src="korea.js"></script>
+
+    <div class="bottom-nav">
+        <a href="home.html" class="button">HOME</a>
+        <a href="japan.html" class="button">JAPAN</a>
+        <a href="korea.html" class="button">KOREA</a>
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>
